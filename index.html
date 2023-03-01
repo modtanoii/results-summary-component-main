@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      :root { --light-slate-blue: hsl(252, 100%, 67%); --light-royal-blue: hsl(241, 81%, 54%); }
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+      body { background-color: #fff; }
+      .card { display: flex; width: 740px; height: 512px; border: 1px solid red; }
+      .card-left { background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue)); width: 50%;}
+      .card-left-header { margin-top: 48px; text-align: center; border: 1px solid red; }
+      .card-left-score { margin-top: 40px; text-align: center; width: 200px; height: 200px; border: 1px solid red; }
+      .card-left-great { margin-top: 50px; text-align: center; }
+      .card-left-text { margin-top: 30px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-left">
+      <div class="card-left-header">
+        Your Result
+      </div>
+      <div class="card-left-score">
+        76
+        of 100
+      </div>
+      <div class="card-left-great">
+        Great
+      </div>
+      <div class="card-left-text">
+        You scored higher than 65% of<br> the people who have taken these tests.
+      </div>
+    </div>
+    <div class="card-right">
+      <div class="card-right-header">
+        Summary
+      </div>
+      <div class="card-right-score">
+        Reaction
+        80 / 100
+    
+        Memory
+        92 / 100
+    
+        Verbal
+        61 / 100
+    
+        Visual
+        72 / 100
+      </div>
+      <div class="card-right-footer">
+        Continue
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">TheI30yin90</a>.
+  </div>
+</body>
+</html>
