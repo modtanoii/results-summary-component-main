@@ -16,7 +16,7 @@
       .attribution a { color: hsl(228, 45%, 44%); }
       body { background-color: #fff; font-family: 'Hanken Grotesk', sans-serif; font-weight: 700;}
       nav { margin-left: 20px; display: flex; align-items: center; width: 90%;}
-      ul { margin-right: 80px; border: 1px solid red; }
+      ul { margin-right: 80px; }
       ul li { display: flex; width: 90px;}
       .container { display: flex; flex-direction: column; max-width: 1440px; height: 960px; margin: 0 auto; justify-content: center; align-items: center; }
       .card { display: flex; width: 740px; height: 512px; border-radius: 30px; box-shadow: 0px 20px 60px 10px hsl(221, 100%, 96%); }
@@ -36,36 +36,6 @@
   </style>
 </head>
 <body>
-  <script>
-    function createNode(element) {
-      return document.createElement(element);
-    }
-    
-    function append(parent, el) {
-      return parent.appendChild(el);
-    }
-
-    const ul = document.getElementById('item');
-    const url = 'data.json';
-
-    fetch(url)
-    .then((res) => res.json())
-    .then(function(data) {
-      console.log(data);
-      let item = data.results;
-      return item.map(function(item) {
-        let nav = createNode('nav');
-        let img = createNode('img');
-        let ul = createNode('ul');
-        let li = createNode('li');
-
-        img.src = item.picture;
-
-        append(nav, img);
-        append()
-      })
-    })
-  </script>
   <div class="container">
   <div class="card">
     <div class="card-left">
@@ -91,17 +61,17 @@
       <div class="card-right-header">
         Summary
       </div>
-        <div class="card-right-reaction">
-          <nav>
-            <ul>
-              <li><img src="/assets/images/icon-reaction.svg" alt="Reaction"><p>Reaction</p></li>
-            </ul>
-  
-            <ul>
-              <li><p>80 / 100</li>
-            </ul>
-          </nav>
-        </div>
+      <div class="card-right-reaction">
+        <nav>
+            <img src="/assets/images/icon-reaction.svg" alt="Reaction">
+          <ul>
+            <li><p>Reaction</p></li>
+          </ul>
+          <ul>
+            <li><p>92 / 100</p></li>
+          </ul>
+        </nav>
+      </div>
         <div class="card-right-memory">
           <nav>
               <img src="/assets/images/icon-memory.svg" alt="Memory">
